@@ -1,5 +1,6 @@
 package com.hitema.jee.services;
 
+import com.hitema.jee.entities.City;
 import com.hitema.jee.entities.Country;
 import com.hitema.jee.repositories.CountryRepository;
 import org.slf4j.Logger;
@@ -22,12 +23,12 @@ public class CountryServiceImpl implements CountryService{
     private static final Logger log = LoggerFactory.getLogger(CountryServiceImpl.class);
     @Override
     public Country create(Country country) {
-        return null;
+        return repository.save(country);
     }
 
     @Override
     public Country read(Long id) {
-        return null;
+        return repository.findById(id).get();
     }
 
     @Override
@@ -37,7 +38,11 @@ public class CountryServiceImpl implements CountryService{
 
     @Override
     public Country update(Country country) {
-        return null;
+        Country countryDB = repository.findById(country.getId()).get();
+        countryDB.setCountry(country.getCountry());
+        countryDB.setLastUpdate(country.getLastUpdate());
+        countryDB.setCities(country.getCities());
+        return repository.save(countryDB);
     }
 
     @Override

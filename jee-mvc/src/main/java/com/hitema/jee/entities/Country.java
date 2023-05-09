@@ -16,16 +16,16 @@ public class Country {
 
     private String country;
 
-    //@OneToMany @JoinColumn(name = "country_id")
-    //private List<City> cities;
+    @OneToMany @JoinColumn(name = "country_id")
+    private List<City> cities;
 
-    //public List<City> getCities() {
-     //   return cities;
-    //}
+    public List<City> getCities() {
+       return cities;
+    }
 
-    //public void setCities(List<City> cities) {
-        //this.cities = cities;
-    //}
+    public void setCities(List<City> cities) {
+        this.cities = cities;
+    }
 
     public Country() {
     }

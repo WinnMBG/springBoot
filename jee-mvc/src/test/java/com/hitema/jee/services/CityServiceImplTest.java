@@ -1,52 +1,58 @@
 package com.hitema.jee.services;
 
+import com.hitema.jee.entities.City;
 import com.hitema.jee.entities.Country;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @SpringBootTest
-class CountryServiceImplTest {
+class CityServiceImplTest {
 
     @Autowired
-    private CountryService service;
-    private static final Logger log = LoggerFactory.getLogger(CountryServiceImpl.class);
-    private static Country country;
+    private CityServiceImpl service;
+    private static final Logger log = LoggerFactory.getLogger(CityServiceImpl.class);
+    private static City city;
+
     @BeforeAll
     static void beforeAll() {
         log.trace("<<<<<Before All>>>>>");
-
+        city = new City();
+        city.setCity("Chelles");
+        city.setLastUpdate(LocalDateTime.now());
     }
     @BeforeEach
     void setUp(){
         log.trace("<<<<<<Before Each>>>>>>");
         assertNotNull(service, "ERROR Service country not injected !");
     }
+
     @Test
     @Order(1)
     void create() {
-        country = new Country();
-        country.setCountry("Kosovo");
-        country.setLastUpdate(LocalDateTime.now());
-        country.setId(111L);
-        assertNotNull(country, "ERROR");
-        log.trace("Nouveau pays crée: {}", service.create(country));
+        city = new City();
+        city.setCity("Riga");
+        city.setLastUpdate(LocalDateTime.now());
+        city.setId(601L);
+        assertNotNull(city, "ERROR");
+        log.trace("Nouvelle ville crée: {}", service.create(city));
     }
 
     @Test
     @Order(2)
     void read() {
         assertNotNull(service, "ERROR");
-        Country c = service.read(111L);
-        assertNotNull(c, "COuntry not FOund");
+        City c = service.read(601L);
+        assertNotNull(c, "City not FOund");
         log.trace("Lecture : {}", c);
     }
 
@@ -60,15 +66,15 @@ class CountryServiceImplTest {
     @Test
     @Order(3)
     void update() {
-        assertNotNull(country, "ERROR");
-        country.setCountry("Albania");
-        log.trace("Pays après update: {}",service.update(country));
+        assertNotNull(city, "ERROR");
+        city.setCity("Vilnius");
+        log.trace("VIlle après update: {}",service.update(city));
     }
 
     @Test
     @Order(4)
     void delete() {
-        service.delete(111L);
+        service.delete(601L);
         log.trace("La taille de la base est de {}", service.readAll().size());
     }
 }
