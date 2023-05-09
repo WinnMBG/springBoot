@@ -1,6 +1,6 @@
 package com.hitema.jee.entities;
 
-import com.hitema.*;
+import com.hitema.jee.*;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -17,6 +17,8 @@ public class City {
     private Long id;
 
     private String city;
+
+    private boolean capital;
 
     @ManyToOne @JoinColumn(name = "country_id")
     private Country country;
@@ -50,8 +52,16 @@ public class City {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity(String cap) {
         this.city = city;
+    }
+
+    public boolean getCapital() {
+        return capital;
+    }
+
+    public void setCapital(boolean cap) {
+        this.capital = cap;
     }
 
     public LocalDateTime getLastUpdate() {

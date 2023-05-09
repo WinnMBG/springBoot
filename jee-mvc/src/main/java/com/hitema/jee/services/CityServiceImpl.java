@@ -6,9 +6,13 @@ import com.hitema.jee.repositories.CityRepository;
 import com.hitema.jee.repositories.CountryRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CityServiceImpl implements CityService{
 
     private CityRepository repository;
@@ -25,7 +29,7 @@ public class CityServiceImpl implements CityService{
 
     @Override
     public City read(Long id) {
-        return repository.findById(id).get();
+        return repository.findById(id).orElse(null);
     }
 
     @Override
@@ -46,4 +50,15 @@ public class CityServiceImpl implements CityService{
     public void delete(Long id) {
         repository.deleteById(id);
     }
+
+    @Override
+    public List<City> readByName(String str) {
+        return repository.readCitiesByCityContainingIgnoreCase(str);
+    }
+
+    @Override
+    public List<City> findCitiesWithCapitals() {
+        return repository.readCitiesByCapitalTrue();
+    }
+
 }

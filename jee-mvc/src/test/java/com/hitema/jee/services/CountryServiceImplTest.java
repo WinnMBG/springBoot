@@ -23,7 +23,6 @@ class CountryServiceImplTest {
     @BeforeAll
     static void beforeAll() {
         log.trace("<<<<<Before All>>>>>");
-
     }
     @BeforeEach
     void setUp(){
@@ -46,7 +45,7 @@ class CountryServiceImplTest {
     void read() {
         assertNotNull(service, "ERROR");
         Country c = service.read(111L);
-        assertNotNull(c, "COuntry not FOund");
+        assertNotNull(c, "Country not Found");
         log.trace("Lecture : {}", c);
     }
 
