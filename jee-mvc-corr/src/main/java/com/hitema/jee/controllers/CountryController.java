@@ -41,7 +41,7 @@ public class CountryController {
     }
 
 	@RequestMapping(value = "/citiesOfcountry", method = RequestMethod.GET)
-	public ModelAndView getUserDetails(@RequestParam Long cId) {
+	public ModelAndView getCities(@RequestParam Long cId) {
 		Country c = service.read(cId);
 		return new ModelAndView("cities","cities",c.getCities());
 	}

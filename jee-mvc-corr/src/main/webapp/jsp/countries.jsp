@@ -44,7 +44,7 @@
 						<th scope="row">${elem.id}</th>
 						<td>${elem.country}</td>
 						<td>
-							<a href="citiesOfcountry?cId=${elem.id}" class="w3-button">Voir les villes</a>
+							<a href="/citiesOfcountry?cId=${elem.id}" class="w3-button">Voir les villes</a>
 						</td>
 					</tr>
 				</c:forEach>
