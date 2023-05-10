@@ -1,3 +1,4 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: Developpeur
@@ -11,8 +12,10 @@
     <title>Index</title>
 </head>
 <body>
-<h1 style="text-align: center;color: chartreuse">Welcome To Sakila !!!</h1>
-<a href="countries">Pays</a>
-<a href="cities">Villes</a>
+<h1 style="text-align: center;color: chartreuse"><spring:message code="application.title"/></h1>
+<div style="text-align: center">
+    <a href="countries">Pays</a>
+    <a href="cities">Villes</a>
+</div>
 </body>
 </html>

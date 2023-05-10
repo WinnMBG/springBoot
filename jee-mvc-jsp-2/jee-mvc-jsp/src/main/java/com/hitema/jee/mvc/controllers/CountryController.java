@@ -1,18 +1,22 @@
-package com.hitema.jee.controllers;
-
-
-import com.hitema.jee.entities.Country;
-import com.hitema.jee.services.CountryService;
-import jakarta.annotation.PostConstruct;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
+package com.hitema.jee.mvc.controllers;
 
 import java.time.LocalDateTime;
 import java.util.List;
+
+import com.hitema.jee.mvc.entities.Country;
+import com.hitema.jee.mvc.services.CountryService;
+import jakarta.annotation.PostConstruct;
+import jakarta.validation.Valid;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
@@ -33,32 +37,24 @@ public class CountryController {
 	
 	
 	@GetMapping("/countries")
-    public ModelAndView getCountries() {	
+    public ModelAndView getCountries() {
+		log.trace("Appel controlleur Country");
 		List<Country> countries = service.readAll();
         return new ModelAndView("countries","countries",countries);
     }
 
-	@RequestMapping(value = "/citiesOfcountry/{cId}", method = RequestMethod.GET)
-	public ModelAndView getCities(@PathVariable Long cId) {
-		Country c = service.read(cId);
-		log.trace("Country : {}", c);
-		return new ModelAndView("cities","cities",c.getCities());
-	}
-
 	@GetMapping("/countryModify")
 	public ModelAndView getCountryModify() {
-		log.trace("appel getCountryModify Country");
+		log.trace("Appel getCountryModify Country");
 		Country country = new Country();
 		country.setLastUpdate(LocalDateTime.now());
-		return new ModelAndView("countryModify", "country", country);
+		return new ModelAndView("countryModify","country",country);
 	}
 
-	@PostMapping("/countryModify")
+	@PostMapping ("/countryModify")
 	public ModelAndView countryModify(@ModelAttribute("countryForm") Country country, ModelMap model) {
-		log.trace("save the country : {}", country);
-		country.setLastUpdate(LocalDateTime.now());
-		Country c = service.create(country);
-		log.trace("saved : {}", c);
-		return new ModelAndView("countryModify", "country", c);
+		log.trace("Appel countryModify : {} ", country);
+		service.create(country);
+		return new ModelAndView("countryModify","country",country);
 	}
 }
