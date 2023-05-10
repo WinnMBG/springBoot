@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d67c2b8-b766-4688-9245-65c1f9905dd1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/JeeMvcApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/entities/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/entities/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/repositories/CityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/repositories/CountryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/services/CityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/services/CityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/services/CountryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hitema/jee/services/CountryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hitema/jee/JeeMvcApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hitema/jee/services/CityServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hitema/jee/services/CountryServiceImplTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PY0gxfrin0XzwRdeC79FVQOPTC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Ecoles/HITEMA/2022-2023/M1 - Web - Dev/JAVA-EE/Projets/jee-mvc/src/main/resources/static/css",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "9c58f1f20d01de1f3eeec12aebcf81e4",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-mvc\src\main\resources\static\css" />
+      <recent name="D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-mvc\src\main\webapp\jsp" />
+      <recent name="D:\Ecoles\HITEMA\2022-2023\M1 - Web - Dev\JAVA-EE\Projets\jee-mvc\src\main\java\com\hitema\jee\entities" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.hitema.jee.services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hitema.jee.controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="CityServiceTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee-mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hitema.jee.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hitema.jee.services" />
+      <option name="MAIN_CLASS_NAME" value="com.hitema.jee.services.CityServiceTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityServiceTest.readAllByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee-mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hitema.jee.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hitema.jee.services" />
+      <option name="MAIN_CLASS_NAME" value="com.hitema.jee.services.CityServiceTest" />
+      <option name="METHOD_NAME" value="readAllByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityServiceTest.readAllCapitals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee-mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hitema.jee.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hitema.jee.services" />
+      <option name="MAIN_CLASS_NAME" value="com.hitema.jee.services.CityServiceTest" />
+      <option name="METHOD_NAME" value="readAllCapitals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountryServiceImplTest.readAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jee-mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hitema.jee.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hitema.jee.services" />
+      <option name="MAIN_CLASS_NAME" value="com.hitema.jee.services.CountryServiceImplTest" />
+      <option name="METHOD_NAME" value="readAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="jee-mvc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hitema.jee.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CountryServiceImplTest.readAll" />
+        <item itemvalue="JUnit.CityServiceTest.readAllCapitals" />
+        <item itemvalue="JUnit.CityServiceTest.readAllByName" />
+        <item itemvalue="JUnit.CityServiceTest.create" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d67c2b8-b766-4688-9245-65c1f9905dd1" name="Changes" comment="" />
+      <created>1683618824182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683618824182</updated>
+      <workItem from="1683618825519" duration="15903000" />
+      <workItem from="1683653086833" duration="146000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
