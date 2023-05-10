@@ -18,13 +18,17 @@
 
 </head>
 <body>
-<div class="w3-container w3-center">
+<div>
+    <a href="<c:url value="?lang=fr" />" class="w3-button"><spring:message code="application.francais"/></a>
+    <a href="<c:url value="?lang=en" />" class="w3-button"><spring:message code="application.english"/></a>
+</div>
+<div class="w3-container">
     <form name="countryForm" action="countryModify" method="POST">
         <table>
             <tr>
-                <td>Id Pays:</td>
+                <td><spring:message code="ad.count-id"/></td>
                 <td><input type="number" name="id" readonly value="${country.id}"/></td>
-                <td>Nom du Pays:</td>
+                <td><spring:message code="ad.count-name"/></td>
                 <td><input type="text" name="country" value="${country.country}"/></td>
             </tr>
             <th><input type="submit" value="Submit"/></th>

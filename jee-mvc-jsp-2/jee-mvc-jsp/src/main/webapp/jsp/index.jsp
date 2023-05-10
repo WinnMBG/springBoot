@@ -13,10 +13,12 @@
     <title>Index</title>
 </head>
 <body>
+    <div>
+        <a href="<c:url value="?lang=fr" />" class="w3-button">Français</a>
+        <a href="<c:url value="?lang=en" />" class="w3-button">English</a>
+    </div>
     <h1 style="text-align: center"><spring:message code="application.title"/></h1>
     <a href="countries"><spring:message code="application.countries"/></a>
     <a href="cities"><spring:message code="application.cities"/></a>
-    <a href="<c:url value="?lang=fr" />" class="w3-button">Français</a>
-    <a href="<c:url value="?lang=en" />" class="w3-button">English</a>
 </body>
 </html>

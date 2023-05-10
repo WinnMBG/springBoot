@@ -26,14 +26,16 @@
 <%--<jsp:include page="header.jsp"></jsp:include>--%>
 
 <div class="w3-container">
-    <h2 style="text-align: center">Sakila - countries</h2>
+    <div>
+        <a href="<c:url value="?lang=fr" />" class="w3-button"><spring:message code="application.francais"/></a>
+        <a href="<c:url value="?lang=en" />" class="w3-button"><spring:message code="application.english"/></a>
+        <h2 style="text-align: center">Sakila - <spring:message code="application.city"/></h2>
+    </div>
     <br>
     <a class="w3-button" href="<c:url value="/" />"><spring:message code="application.back"/></a>
-    <a href="<c:url value="?lang=fr" />" class="w3-button"><spring:message code="application.francais"/></a>
-    <a href="<c:url value="?lang=en" />" class="w3-button"><spring:message code="application.english"/></a>
 
     <div class="w3-container w3-center">
-        <a class="w3-button" href="<c:url value="countryModify" />">Nouveau</a>
+        <a class="w3-button" href="<c:url value="countryModify" />"><spring:message code="application.new"/></a>
         <table id="countriesTable" class="w3-centered w3-table-all">
             <thead>
             <tr class="w3-light-grey">
